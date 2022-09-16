@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratornaya_1</title>
+
+    <script>
+        function lab()
+        {
+            var x = document.getElementById("number");
+            var n = document.getElementById("number1");
+            x = x.value;
+            n = n.value;
+
+            for(var x = 0; x <= n; x++)
+            {
+                var e = 2 * Math.pow(x, (2 * n + 1)) / 2 * n + 1;
+            }
+            result.innerHTML = e;
+        }
+    </script>
+</head>
+<body>
+    <input id="number" value="Введите значениe X" type="text">
+    <input id="number1" value="Введите значение N" type="text">
+    <input type="button" value="Ввести значения" onclick="lab()">
+    <p id="result"></p>
+</body>
+</html>
